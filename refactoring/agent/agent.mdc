@@ -1,6 +1,11 @@
 ---
 description: This rules governs the agent in cursor and the actions that the agent should have when operating on this code base. 
-globs: 
+globs. 
+
+USAGE: {list of tasks delimited by comma} || activate @agent.mdc
+
+ex: Add more loading states for specific sections; Enhance the error messages; Adjust the transition timings; Add more interactive feedback || activate @agent
+
 ---
 # Agentic AI Manifest for Iterative Codebase Orchestration
 
