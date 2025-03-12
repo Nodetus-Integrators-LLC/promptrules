@@ -1,0 +1,110 @@
+# [NATURAL READING, DIGITAL PAPER]
+
+# Daylight Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create a reading-focused interface that emulates natural ink on paper with selective color highlights
+* **Constraint Parameters**: Optimize for readability, reduce eye strain, support extended reading sessions
+* **Reference Context**: Kindle e-readers with enhanced color capabilities, physical books with highlight markers
+* **Edge Case Handling**: Maintain readability in various lighting conditions, provide adequate contrast in monochromatic mode
+* **Evaluation Metrics**: Reading comfort over extended periods, ease of content navigation, highlight effectiveness
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  - Primary palette: Monochromatic (paper white to charcoal)
+  - Accent palette: Watercolor/marker bursts (muted, translucent colors)
+  - Typography: Serif for body text, sans-serif for UI elements
+  - Voice/tone: Quiet, calming, reflective
+
+* **Technical Requirements**: 
+  - Target 60fps scrolling performance
+  - Support for e-ink and standard displays
+  - Responsive design from 6" to 12" displays
+  - Battery-efficient rendering
+
+* **Accessibility Standards**: 
+  - WCAG AA compliance minimum
+  - Adjustable text sizing (14-32pt)
+  - Variable contrast settings
+  - Support for screen readers
+
+* **Implementation Boundaries**: 
+  - Framework agnostic
+  - Minimal JavaScript requirements
+  - Progressively enhanced from core reading experience
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  - IF nighttime OR low-light THEN activate sepia/dark mode
+  - IF extended reading THEN gradually reduce UI element visibility
+  - IF highlight density > 30% THEN switch to selective highlighting
+  - IF screen size < 7" THEN simplify margin annotations
+
+* **Priority Hierarchies**:
+  1. Text readability
+  2. Reading position maintenance
+  3. Highlight visibility
+  4. Navigation controls
+  5. Supplementary features
+
+* **Progressive Enhancement**:
+  - Core: Clean, readable text display
+  - Enhanced: Color highlights and annotations
+  - Advanced: Interactive notes and references
+
+* **Fallback Strategy**:
+  - When color unavailable: Use texture patterns for highlighting
+  - When JavaScript unavailable: Provide static page navigation
+  - When custom fonts unavailable: Optimize system serif fonts
+
+## 4. Comprehensive Rubric
+
+### Reading Comfort (1-5)
+* 1: Causes eye strain within minutes
+* 3: Comfortable for 30-60 minute reading sessions
+* 5: Comfortable for multi-hour reading without fatigue
+
+### Navigation Intuitiveness (1-5)
+* 1: Navigation controls confusing or intrusive
+* 3: Basic navigation is clear but advanced features require learning
+* 5: Intuitive navigation for all reading patterns, nearly invisible UI
+
+### Highlight Effectiveness (1-5)
+* 1: Highlights distract from reading experience
+* 3: Highlights visible without disrupting flow
+* 5: Highlights enhance comprehension without any negative impact
+
+### Adaptability (1-5)
+* 1: Works only in ideal lighting conditions
+* 3: Adapts to common lighting variations
+* 5: Excellent reading experience across all environments
+
+### Aesthetic Fidelity (1-5)
+* 1: Digital appearance with no paper-like qualities
+* 3: Convincing paper simulation in controlled settings
+* 5: Consistently evokes physical reading experience across all contexts
+
+## 5. Validation Protocol
+
+* **Testable Assertions**: 
+  - Users can read continuously for 90+ minutes without reported eye strain
+  - 90% of users can locate highlighted sections within 5 seconds
+  - Text contrast ratio meets 7:1 in all lighting conditions
+
+* **User Testing Requirements**: 
+  - Test with both casual and power readers
+  - Include users over 40 (presbyopia)
+  - Test across multiple real-world lighting environments
+
+* **Iteration Triggers**: 
+  - Reading comprehension tests show <90% effectiveness compared to control
+  - User satisfaction ratings fall below 4.2/5
+  - Session duration averages less than 25 minutes
+
+* **Documentation Standards**: 
+  - Provide color interaction guidelines for content creators
+  - Include performance optimization techniques
+  - Document accessibility implementation details
