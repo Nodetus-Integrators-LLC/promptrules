@@ -4,7 +4,65 @@
 - Contextual Completeness: Each prompt must stand independently, containing necessary contextual information.
 - Actionable and Specific: Prompts must clearly define the desired outcome or objective.
 ##2. Absolutes
-- Consistency: Maintain uniform application across design systems.
+- Consistency: Maintain uniform application across design systems.a# [MOTTO/EMERGENT THOUGHT, ex. IT SUCKS, MAKE IT POP!]
+
+# MDC Structure for Prompt Rules & Design Rubrics
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Begin with clear goal/outcome statement (what, why, for whom)
+* **Constraint Parameters**: Define technical limitations and requirements upfront
+* **Reference Context**: Include sample inputs/outputs or design patterns to emulate
+* **Edge Case Handling**: Specify behavior for exceptional scenarios
+* **Evaluation Metrics**: State how success will be measured
+
+## 2. Design Constants
+
+* **Brand Compliance**: Specific values for brand colors, typography, voice/tone
+* **Technical Requirements**: Performance thresholds, responsive breakpoints, supported platforms
+* **Accessibility Standards**: Target WCAG level (AA/AAA), specific requirements like contrast ratios
+* **Implementation Boundaries**: Framework agnostic implementation rules
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**: If/then logic for handling design variations
+* **Priority Hierarchies**: Ordered list of which requirements take precedence when conflicts arise
+* **Progressive Enhancement**: Defined core functionality with optional enhancements
+* **Fallback Strategy**: Clear alternatives when primary approach isn't feasible
+
+## 4. Comprehensive Rubric
+
+### Functionality (1-5)
+* 1: Does not function as intended
+* 3: Functions but with notable limitations
+* 5: Functions flawlessly across all specified contexts
+
+### Accessibility (1-5)
+* 1: Major accessibility barriers present
+* 3: Meets minimum requirements but with some issues
+* 5: Fully accessible with enhanced features
+
+### Implementation Efficiency (1-5)
+* 1: Requires extensive custom code/workarounds
+* 3: Implementation is straightforward but not optimized
+* 5: Elegant implementation with minimal code footprint
+
+### Scalability (1-5)
+* 1: Works only for specific use case
+* 3: Adaptable to similar scenarios with modifications
+* 5: Highly reusable across diverse applications
+
+### Visual Coherence (1-5)
+* 1: Visually inconsistent with design system
+* 3: Visually aligned but with minor inconsistencies
+* 5: Perfect visual harmony with existing elements
+
+## 5. Validation Protocol
+
+* **Testable Assertions**: Concrete, measurable statements that can be verified
+* **User Testing Requirements**: Specific scenarios to test with real users
+* **Iteration Triggers**: Defined thresholds that indicate when redesign is needed
+* **Documentation Standards**: Required level of documentation for implementation
 - Accessibility: Compliant with WCAG guidelines for contrast, readability, and ease of navigation.
 - Modularity: Ensure styles can be implemented without dependency on specific frameworks.
 ##3. Algorithm
