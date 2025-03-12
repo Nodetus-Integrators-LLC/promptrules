@@ -1,0 +1,103 @@
+# [RAW AESTHETICS, BOLD CONTRASTS, TACTILE DIMENSION]
+
+# Claymorphism Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create tactile, playful interfaces with clay-like dimensional elements that appear soft and squeezable
+* **Constraint Parameters**: Must maintain usability while incorporating significant depth and shadow effects
+* **Reference Context**: See Cuberto, Stripe interfaces, and Apple's Big Sur aesthetic for dimensional inspiration
+* **Edge Case Handling**: Define simplified variations for performance-critical or mobile contexts
+* **Evaluation Metrics**: User engagement, perceived playfulness, and recognition of interactive elements
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  - Colors: Saturated base colors with 15-20% white overlay for "clay" effect
+  - Typography: Extra-bold sans-serif (minimum 700 weight) for headers, high-contrast for readability
+  - Spacing: Minimum 24px between elements to accommodate dimension effects
+
+* **Technical Requirements**: 
+  - CSS: Heavy reliance on box-shadow (minimum triple shadow layering)
+  - Performance: Optimize shadow rendering for 60fps minimum on mid-tier devices
+  - Responsive: Reduce shadow complexity at <768px viewport width
+
+* **Accessibility Standards**: 
+  - Maintain WCAG AA contrast between text and background despite soft shadows
+  - Provide non-motion alternatives when clay elements animate on interaction
+  - Ensure focus states maintain visibility despite dimensional effects
+
+* **Implementation Boundaries**: 
+  - All effects must be achievable with CSS only (no images for basic shapes)
+  - No dependency on JavaScript for core visual presentation
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  - IF element is interactive THEN clay effect must be at least 8px deep
+  - IF background is light THEN shadows must use 8-12% opacity
+  - IF background is dark THEN use 15-20% lighter tones for clay elements
+
+* **Priority Hierarchies**:
+  - 1. Functional clarity
+  - 2. Dimensional consistency
+  - 3. Performance optimization
+  - 4. Animation enrichment
+
+* **Progressive Enhancement**:
+  - Base layer: Solid colors with border-radius
+  - Enhanced: Multiple layered shadows
+  - Full experience: Hover/focus state animations that change dimension
+
+* **Fallback Strategy**:
+  - Degrade to flat design with bold outlines when rendering issues occur
+  - Use solid colors with higher contrast when shadow effects cannot be rendered
+
+## 4. Comprehensive Rubric
+
+### Dimensionality (1-5)
+* 1: Flat appearance without clay-like qualities
+* 3: Some dimension but inconsistent depth perception
+* 5: Perfect clay-like appearance with consistent physics across interface
+
+### Tactility (1-5)
+* 1: No sense of physical interaction possibility
+* 3: Elements appear somewhat touchable
+* 5: Interface elements create compelling illusion of physical manipulation
+
+### Bold Typography Integration (1-5)
+* 1: Typography conflicts with dimensional elements
+* 3: Typography works but doesn't enhance the clay aesthetic
+* 5: Typography perfectly complements and enhances the clay-like elements
+
+### Contrast Management (1-5)
+* 1: Harsh contrasts make interface difficult to parse
+* 3: Contrast is bold but some elements lack definition
+* 5: Perfect balance of bold contrast while maintaining visual harmony
+
+### Raw Aesthetic Integrity (1-5)
+* 1: Appears too polished, losing the raw quality
+* 3: Some elements maintain raw aesthetic while others appear refined
+* 5: Consistently raw aesthetic while maintaining usability
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  - Clay elements maintain dimension across browsers (Chrome, Safari, Firefox, Edge)
+  - Interactive elements change dimension by at least 2px when activated
+  - Typography remains legible at all viewport sizes despite dimensional effects
+
+* **User Testing Requirements**:
+  - Validate affective response ("Does this interface feel friendly/playful?")
+  - Test recognition of interactive vs. static elements
+  - Measure time-to-first-interaction compared to flat designs
+
+* **Iteration Triggers**:
+  - <70% of users immediately recognize interactive elements
+  - >25% performance degradation on target devices
+  - Accessibility testing reveals contrast issues with dimensional effects
+
+* **Documentation Standards**:
+  - CSS shadow formulas must be documented for each base color
+  - Animation timing functions must be specified for interactive states
+  - Responsive breakpoints must include screenshots of dimensional reductions
