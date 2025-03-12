@@ -1,0 +1,14 @@
+#TEMPLATE
+##1. Prompt Rules (General Guidelines)
+- Clarity: Clearly defined, unambiguous prompts.
+- Contextual Completeness: Each prompt must stand independently, containing necessary contextual information.
+- Actionable and Specific: Prompts must clearly define the desired outcome or objective.
+##2. Absolutes
+- Consistency: Maintain uniform application across design systems.
+- Accessibility: Compliant with WCAG guidelines for contrast, readability, and ease of navigation.
+- Modularity: Ensure styles can be implemented without dependency on specific frameworks.
+##3. Algorithm
+-Clearly defined step-by-step processes to achieve each style, with explicit criteria for decision-making.
+
+##4. Rubric
+- Defined scales for evaluation (1-5 rating) for clarity, effectiveness, accessibility, aesthetic coherence, and ease of implementation.
