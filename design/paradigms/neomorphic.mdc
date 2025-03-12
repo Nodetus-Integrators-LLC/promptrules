@@ -1,0 +1,107 @@
+# [SOFT SHADOWS, SUBTLE DEPTH]
+
+# Neomorphic Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create UI elements with subtle, realistic depth using soft shadows and highlights while maintaining a minimalist appearance
+* **Constraint Parameters**: Limited to light color palettes (typically off-whites, light grays); requires precise shadow implementation; avoid excessive depth that breaks the illusion
+* **Reference Context**: Apple's iOS widgets (pre-iOS 14), Dribbble neomorphic examples by Alexander Plyuto
+* **Edge Case Handling**: For dark modes, invert shadow directions and reduce contrast; for mobile, reduce shadow spread to maintain performance
+* **Evaluation Metrics**: Visual cohesion, shadow realism, tactile impression, performance impact of shadow rendering
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  - Background colors: #E0E5EC, #F0F4F8, #FFFFFF
+  - Shadow colors: rgba(0,0,0,0.07) for dark shadows, rgba(255,255,255,0.8) for light highlights
+  - Typography: San-serif fonts with medium weight (Nunito, SF Pro, Roboto)
+  - Roundness: Border-radius 12px-24px (consistent across elements)
+
+* **Technical Requirements**: 
+  - Max 3 layered shadows per element
+  - Responsive breakpoints maintain shadow proportions relative to element size
+  - Progressive enhancement: Fallback to flat design on low-powered devices
+
+* **Accessibility Standards**: 
+  - WCAG AA compliance required
+  - Contrast ratio minimum 4.5:1 for text
+  - Interactive elements must have focus states that preserve neomorphic style
+
+* **Implementation Boundaries**: 
+  - CSS-only implementation preferred
+  - Framework-agnostic shadow mixins/variables
+  - No JavaScript dependency for core visual effects
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  - If element is interactive → Use inset shadows on press/click
+  - If background is > 80% brightness → Use standard shadow values
+  - If background is < 80% brightness → Use inverted shadow technique
+  - If element contains critical info → Reduce shadow subtlety by 20%
+
+* **Priority Hierarchies**:
+  1. Functional clarity (element purpose must be obvious)
+  2. Performance (shadow complexity must not impact rendering)
+  3. Visual consistency with surrounding elements
+  4. Depth illusion effect
+
+* **Progressive Enhancement**:
+  - Core: Solid color with rounded corners
+  - Basic: Single shadow implementation
+  - Full: Dual shadows with highlights and pressed states
+
+* **Fallback Strategy**:
+  - Reduce to flat design with subtle border when shadows not supported
+  - Use single shadow when device performance is a concern
+  - For printing, add thin gray border to indicate dimensionality
+
+## 4. Comprehensive Rubric
+
+### Functionality (1-5)
+* 1: Shadows interfere with readability or usability of elements
+* 3: Elements function correctly but shadow effects occasionally distract
+* 5: Seamless integration of neomorphic effects that enhance usability through visual affordances
+
+### Accessibility (1-5)
+* 1: Shadows create insufficient contrast or visual confusion
+* 3: Meets basic accessibility but requires some adjustments for all users
+* 5: Fully accessible with enhanced states for focus, hover, and active that maintain the neomorphic style
+
+### Implementation Efficiency (1-5)
+* 1: Requires complex shadow layering that impacts performance
+* 3: Implementation uses optimized shadows but with some complexity
+* 5: Elegant implementation with minimal shadow layers and optimized CSS
+
+### Scalability (1-5)
+* 1: Neomorphic effect breaks at different screen sizes
+* 3: Maintains effect across most common device sizes with some adjustments
+* 5: Fully responsive neomorphic implementation that scales proportionally
+
+### Visual Coherence (1-5)
+* 1: Inconsistent shadow directions or intensities across interface
+* 3: Consistent application but with occasional misalignments with light source
+* 5: Perfect visual harmony with consistent light source and shadow behavior
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  - Shadow blur and spread remains proportional across element sizes
+  - Click/tap states correctly invert shadows without jarring transition
+  - Shadow rendering does not exceed 5ms paint time
+
+* **User Testing Requirements**:
+  - Verify button affordance is clear without labels
+  - Test recognition of interactive vs non-interactive elements
+  - Evaluate perceived depth consistency across the interface
+
+* **Iteration Triggers**:
+  - > 10% of users fail to identify interactive elements
+  - Shadow rendering causes frame drops below 60fps
+  - Contrast testing fails WCAG AA standards
+
+* **Documentation Standards**:
+  - Shadow mixin/function with standardized parameters
+  - Light source direction diagram for design system
+  - Interactive/non-interactive element specification with code examples
