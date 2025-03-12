@@ -1,4 +1,4 @@
-# PromptRules
+# PromptRules 🧠
 
 A collection of guidelines, rules, and strategies for optimizing AI interactions.
 
@@ -12,49 +12,65 @@ PromptRules provides structured approaches to improve AI outputs through:
 
 ## Rule Vectors
 
-### Prompt Engineering Rules
+### Prompt Engineering Rules 📝
 - Instruction clarity standards
 - Context provision frameworks
 - Output formatting requirements
 - Chain-of-thought triggers
 - Few-shot learning templates
 
-### Cursor Rules
+### Cursor Rules ⌨️
 - Command completion formats
 - Response behavior modifiers
 - Tone and style directives
 - Error handling preferences
 - Memory utilization guidelines
 
-### RAG Optimization
+### RAG Optimization 🔍
 - Embedding construction patterns
 - Retrieval strategy rules
 - Context window utilization
 - Document chunking standards
 - Relevance weighting protocols
 
-### System Instructions
+### System Instructions 🤖
 - Agent behavior parameters
 - Tool utilization protocols
 - Safety guardrail frameworks
 - Multi-agent coordination rules
 - Response moderation guidelines
 
-### Language Rigidity
+### Language Rigidity 📊
 - Strict semantic frameworks
 - Domain-specific terminologies
 - Context-sensitive language patterns
 - Precision vs generalization balances
 - Translation and interpretation rules
 
-### UX/UI Integration
+### UX/UI Integration 🖥️
 - Command center interaction designs
 - Mobile vs desktop optimization
 - Visual cue integration with language models
 - Error message standardization
 - Progressive disclosure frameworks
 
-## Usage
+### Design Paradigms 🎨
+- Neomorphic aesthetic principles
+- Papermorphic visual language
+- Skeuomorphic representation standards
+- Glassmorphism transparency effects
+- Material design component adaptation
+- Neumorphism shadow/lighting specifications
+
+### Design Frameworks 🧰
+- Command interface heuristics
+- Functional push button mechanics
+- Conversational UI patterns
+- Direct manipulation standards
+- Form-based interaction rules
+- Modal vs. modeless interaction schemas
+
+## Usage 🚀
 
 Apply these rules by:
 1. Including them in system prompts
@@ -63,7 +79,7 @@ Apply these rules by:
 4. Training models with rule-aware fine-tuning
 5. Building middleware that enforces rule compliance
 
-## Contribution
+## Contribution 👥
 
 Add rules by creating a PR with your additions in the appropriate directory:
 - Follow the established format
@@ -71,6 +87,6 @@ Add rules by creating a PR with your additions in the appropriate directory:
 - Document expected outcomes
 - Cross-reference related rules
 
-## License
+## License ⚖️
 
 [Insert appropriate license]
