@@ -89,4 +89,16 @@ Add rules by creating a PR with your additions in the appropriate directory:
 
 ## License ⚖️
 
-[Insert appropriate license]
+Open Source 2.0
+
+## Roadmap 🗓️
+
+### 2025 Q1 Focus Areas
+- Design Frameworks implementation
+- Framework compatibility standards
+- Cursor Rules optimization
+
+### Future Milestones
+- 2025 Q2: UI/UX Integration
+- 2025 Q3: Language Rigidity, RAG Optimization
+- 2025 Q4: System Instructions, Prompt Engineering Rules
