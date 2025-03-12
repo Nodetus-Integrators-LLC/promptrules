@@ -1,0 +1,97 @@
+# [COMPOSITION OVER INHERITANCE, BUILD SMALL TO SCALE BIG]
+
+# Atomic Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create modular, scalable interface components following atomic design methodology (atoms → molecules → organisms → templates → pages)
+* **Constraint Parameters**: Components must be self-contained, reusable, and follow single responsibility principle
+* **Reference Context**: Utilize established component libraries as reference (Material UI, Tailwind, Bootstrap)
+* **Edge Case Handling**: Define responsive behavior, loading states, and error states for each component level
+* **Evaluation Metrics**: Component reusability, composition flexibility, rendering performance
+
+## 2. Design Constants
+
+* **Brand Compliance**: Define color tokens, typography scale, spacing system, and component-specific styles
+* **Technical Requirements**: 
+  - Browser support (minimum IE11+)
+  - Target render time (<150ms for atoms, <300ms for molecules)
+  - CSS-in-JS or class-based methodology
+* **Accessibility Standards**: 
+  - WCAG 2.1 AA compliance
+  - Keyboard navigation for all interactive elements
+  - Proper ARIA attributes per component
+* **Implementation Boundaries**: 
+  - Framework-agnostic design tokens
+  - Clear component composition patterns
+  - Documentation for state management
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  - If component has single function → atom
+  - If component combines atoms with related functionality → molecule
+  - If component creates a distinct section of interface → organism
+  - If layout combines multiple organisms → template
+  - If implementation has specific content → page
+* **Priority Hierarchies**:
+  1. Accessibility compliance
+  2. Performance optimization
+  3. Component reusability
+  4. Visual consistency
+* **Progressive Enhancement**:
+  - Core: Static HTML structure
+  - Enhancement: Interactive behaviors, animations
+  - Advanced: Complex state management
+* **Fallback Strategy**:
+  - Simplified view for older browsers
+  - Server-side rendering fallback
+  - Graceful degradation path
+
+## 4. Comprehensive Rubric
+
+### Atomicity (1-5)
+* 1: No clear separation of concerns
+* 3: Some components follow atomic principles but with inconsistencies
+* 5: Perfect implementation of atomic design hierarchy
+
+### Accessibility (1-5)
+* 1: Major accessibility barriers present
+* 3: Meets minimum requirements but with some issues
+* 5: Fully accessible with enhanced features
+
+### Implementation Efficiency (1-5)
+* 1: Requires extensive custom code/workarounds
+* 3: Implementation is straightforward but not optimized
+* 5: Elegant implementation with minimal code footprint
+
+### Composition Flexibility (1-5)
+* 1: Components cannot be easily composed together
+* 3: Components work together with some modifications
+* 5: Components seamlessly compose across all levels of hierarchy
+
+### Visual Coherence (1-5)
+* 1: Visually inconsistent across component hierarchy
+* 3: Visually aligned but with minor inconsistencies
+* 5: Perfect visual harmony across atom→page flow
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  - All atoms render in <100ms
+  - Organisms maintain performance under 10+ instances
+  - All interactive elements support keyboard navigation
+  - Component variants maintain consistent API
+* **User Testing Requirements**:
+  - Test page-level compositions with real users
+  - Validate responsive behavior across device types
+  - Measure time-to-task completion
+* **Iteration Triggers**:
+  - When components exceed performance budgets
+  - When similar components emerge with overlapping functionality
+  - When accessibility issues are identified
+* **Documentation Standards**:
+  - Storybook or equivalent component documentation
+  - Props/API documentation for each component
+  - Usage examples showing composition patterns
+  - Visual regression testing setup
