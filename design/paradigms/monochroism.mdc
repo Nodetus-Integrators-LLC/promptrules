@@ -1,0 +1,103 @@
+# [DEPTH THROUGH CONSTRAINT]
+
+# Design Paradigm: Monochroism
+*Single-color palettes with varying shades for depth*
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create visual hierarchy and cohesion using a single base color with mathematical variations in saturation and luminance to provide depth and focus without color contrast.
+* **Constraint Parameters**: Limit palette to a single hue with at least 5 tint/shade variations; maintain sufficient contrast ratios between adjacent shades (minimum 3:1 for text).
+* **Reference Context**: See Google Material Design monochromatic palette generation, IBM Carbon Design System color ramps.
+* **Edge Case Handling**: For interactive elements, ensure hover/focus states have minimum 4.5:1 contrast ratio against background; use texture or subtle patterns when additional visual separation is needed.
+* **Evaluation Metrics**: Success measured by maintained hierarchy, readability, and visual interest despite color constraints.
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  - Base color: [HEX VALUE]
+  - Shade generation algorithm: [ALGORITHM DETAILS]
+  - Typography weight variation: Increase font weight by 200 units to compensate for reduced color contrast
+* **Technical Requirements**: 
+  - Generate color variants using HSL model for predictable luminance steps
+  - Support for high contrast mode with increased luminance differences
+  - Responsive adjustments: Increase contrast on smaller viewports
+* **Accessibility Standards**: 
+  - WCAG AA compliant (minimum 4.5:1 contrast for normal text)
+  - Test with grayscale filters to validate perceptible contrast
+  - Include alternative visual indicators (icons, patterns) for color-blind users
+* **Implementation Boundaries**: 
+  - Define colors as CSS custom properties with clear naming convention
+  - Provide SCSS/LESS mixins for shade generation
+  - Implement with standard color values, not dependent on specific frameworks
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  - If element is primary action → Use darkest/most saturated shade
+  - If element is background → Use lightest shade
+  - If element indicates hierarchy level → Use shade based on numeric position in hierarchy
+  
+* **Priority Hierarchies**:
+  1. Accessibility (contrast) requirements
+  2. Functional clarity (distinguishable UI elements)
+  3. Aesthetic balance
+  4. Animation/transition effects
+  
+* **Progressive Enhancement**:
+  - Core: Static monochromatic palette
+  - Enhancement: Subtle gradient transitions between shades
+  - Enhancement: Micro-interactions with luminance shifts
+  
+* **Fallback Strategy**:
+  - When contrast insufficient: Add subtle border or shadow
+  - When differentiation needed: Introduce pattern/texture variation
+  - When emphasis required: Use size or weight variation instead of color
+
+## 4. Comprehensive Rubric
+
+### Functionality (1-5)
+* 1: Elements not distinguishable from each other
+* 3: Elements distinguishable but hierarchy not immediately clear
+* 5: Clear visual hierarchy and functionality despite monochromatic constraint
+
+### Accessibility (1-5)
+* 1: Fails contrast requirements for text readability
+* 3: Meets minimum contrast requirements but challenging for some users
+* 5: Excellent readability with thoughtful alternatives to color-based indicators
+
+### Implementation Efficiency (1-5)
+* 1: Requires custom implementation for each element
+* 3: Systematized but with numerous exceptions
+* 5: Elegant implementation with mathematical color generation and consistent application
+
+### Scalability (1-5)
+* 1: Works only for simple interfaces
+* 3: Adaptable to complex interfaces with some modifications
+* 5: Robust system that scales to any interface complexity
+
+### Visual Coherence (1-5)
+* 1: Appears flat and undifferentiated
+* 3: Serviceable depth but lacks visual interest
+* 5: Sophisticated visual depth with elegant shade transitions
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  - All text elements maintain minimum 4.5:1 contrast ratio with backgrounds
+  - Primary actions distinguishable from secondary actions without color discrimination
+  - Interface remains navigable when viewed in grayscale
+  
+* **User Testing Requirements**:
+  - Test with color blind users
+  - Test comprehension of hierarchy without prior explanation
+  - Measure time-to-task completion compared to polychromatic interfaces
+  
+* **Iteration Triggers**:
+  - User error rate exceeds 5% for common tasks
+  - Negative feedback specifically mentioning difficulty distinguishing elements
+  - Heat map shows user confusion/searching
+  
+* **Documentation Standards**:
+  - Complete shade reference with context-specific usage guidelines
+  - Color function documentation for dynamic shade generation
+  - Illustrative examples of correct/incorrect implementations
