@@ -1,0 +1,98 @@
+# [TRANSPARENCY WITH DEPTH, MAKE IT ETHEREAL]
+
+# Glassomorphic Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create UI elements with a translucent, frosted glass appearance that suggests depth while maintaining lightness and modernity. Ideal for contemporary applications requiring visual hierarchy without heaviness.
+* **Constraint Parameters**: Requires browser support for backdrop-filter or equivalent; fallback strategy necessary for older browsers.
+* **Reference Context**: Apple macOS/iOS frosted UI elements, Microsoft Fluent Design System.
+* **Edge Case Handling**: Special consideration needed for text contrast on variable backgrounds; solutions must account for light/dark mode variations.
+* **Evaluation Metrics**: Success measured by perceived depth, readability across backgrounds, performance impact, and consistency of glass effect across platforms.
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  * Background: rgba(255, 255, 255, 0.15) to rgba(255, 255, 255, 0.25) for light modes
+  * Background: rgba(20, 20, 20, 0.15) to rgba(20, 20, 20, 0.25) for dark modes
+  * Border: 1px solid rgba(255, 255, 255, 0.18) for light, rgba(255, 255, 255, 0.08) for dark
+  * Typography: High contrast, preferably sans-serif for maximum legibility
+* **Technical Requirements**: 
+  * Backdrop-filter: blur(8px-12px)
+  * Minimal GPU overhead (limit layered transparency)
+  * Responsive behavior: maintain glass effect across breakpoints
+* **Accessibility Standards**: 
+  * WCAG AA+ compliant
+  * Minimum 4.5:1 contrast ratio for text
+  * Non-text contrast minimum 3:1
+  * Include non-glass alternative for users with reduced motion preferences
+* **Implementation Boundaries**: 
+  * CSS implementation should be separable from structural elements
+  * Avoid framework-specific properties
+  * Provide preprocessor (SASS/LESS) variables for customization
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  * IF background is complex/busy THEN increase blur value and background opacity
+  * IF content is text-heavy THEN increase background opacity for better readability
+  * IF element is interactive THEN add subtle hover/focus state that increases opacity
+* **Priority Hierarchies**:
+  1. Accessibility (contrast/readability)
+  2. Performance (minimize layers/filters)
+  3. Visual consistency
+  4. Animation subtlety
+* **Progressive Enhancement**:
+  * Core: Solid background with border for older browsers
+  * Enhancement: Add translucency, then blur effect when supported
+  * Advanced: Subtle parallax or depth effect on interaction
+* **Fallback Strategy**:
+  * Browsers without backdrop-filter: Use solid background with slight transparency
+  * Reduced motion preference: Use subtle border and solid background
+
+## 4. Comprehensive Rubric
+
+### Functionality (1-5)
+* 1: Glass effect breaks or disappears in certain contexts
+* 3: Glass effect consistent but with noticeable performance impact
+* 5: Glass effect maintains consistency across contexts with negligible performance impact
+
+### Accessibility (1-5)
+* 1: Text illegible on certain backgrounds, no fallbacks
+* 3: Text readable but requires strain, basic fallbacks available
+* 5: Perfect readability across all backgrounds with robust fallbacks for all users
+
+### Implementation Efficiency (1-5)
+* 1: Requires complex CSS hacks or heavy JavaScript
+* 3: Clean implementation but with unnecessary dependencies
+* 5: Lightweight CSS-only solution with excellent browser support
+
+### Scalability (1-5)
+* 1: Works only on specific elements
+* 3: Works across common UI elements with some customization
+* 5: Easily applied to any UI element with consistent results
+
+### Visual Coherence (1-5)
+* 1: Glass effect looks artificial or mismatched with overall design
+* 3: Glass effect looks authentic but competes with other design elements
+* 5: Glass effect enhances overall design, creating natural visual hierarchy
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  * Element maintains 60fps scroll performance on mid-tier devices
+  * Text passes automated contrast checks on all supported background variations
+  * Glass effect is consistent across Chrome, Safari, Firefox, and Edge
+* **User Testing Requirements**:
+  * Test with users in bright environments where glare may affect perception
+  * Validate that users can distinguish interactive vs non-interactive glass elements
+  * Confirm depth perception works for users with vision impairments
+* **Iteration Triggers**:
+  * Redesign if >10% of users report eyestrain during extended use
+  * Reconsider approach if performance drops below 45fps on target devices
+  * Revisit if accessibility testing reveals WCAG failures
+* **Documentation Standards**:
+  * Provide CSS custom properties documentation
+  * Include examples of proper semantic HTML structure
+  * Document performance considerations and optimization techniques
+  * Require examples of both light and dark mode implementations
