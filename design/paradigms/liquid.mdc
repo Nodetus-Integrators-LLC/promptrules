@@ -1,0 +1,88 @@
+# [FLOW LIKE WATER, ADAPT LIKE NATURE]
+
+# Liquid Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create fluid, adaptive interfaces with organic animations that respond naturally to user interaction and viewport changes
+* **Constraint Parameters**: Animations must not exceed 300ms for responsiveness; fluid layouts must maintain readability at all viewport sizes
+* **Reference Context**: Refer to natural movement patterns like water ripples, leaf movements, and other organic behaviors
+* **Edge Case Handling**: Define graceful degradation for older browsers or low-power devices
+* **Evaluation Metrics**: Measure perceived smoothness, animation frame rates (target: 60fps), and time-to-interactive
+
+## 2. Design Constants
+
+* **Brand Compliance**: Use gradients and transparency to enhance liquid feel while maintaining brand color palette; typography should have adequate spacing for dynamic layouts
+* **Technical Requirements**: Implement will-change for animation optimization; use CSS physics-based animations when possible; responsive breakpoints must support fluid resizing not just discrete jumps
+* **Accessibility Standards**: Animations must respect prefers-reduced-motion; all fluid elements must maintain WCAG AA contrast ratios throughout transformations
+* **Implementation Boundaries**: Core liquid behaviors must work without JavaScript dependencies, with JS enhancements as progressive features
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  * If viewport < 600px → simplify liquid animations 
+  * If user has reduced motion preferences → switch to subtle transitions
+  * If element has focus → maintain stability during liquid animations
+  
+* **Priority Hierarchies**:
+  1. Performance and responsiveness
+  2. Natural, organic feel
+  3. Visual richness and depth
+  4. Animation complexity
+
+* **Progressive Enhancement**:
+  * Core: Basic fluid layouts with simple transitions
+  * Enhanced: Physics-based animations and complex liquid behaviors
+  * Premium: Interactive fluid simulations that respond to user input
+
+* **Fallback Strategy**:
+  * WebGL animations → fallback to CSS animations → fallback to simple transitions
+
+## 4. Comprehensive Rubric
+
+### Fluidity (1-5)
+* 1: Static layouts with abrupt transitions
+* 3: Smooth transitions but with mechanical feel
+* 5: Truly organic movement that mimics natural fluid dynamics
+
+### Responsiveness (1-5)
+* 1: Layout breaks or animations stutter during resizing
+* 3: Maintains layout but with noticeable recalculation
+* 5: Seamlessly adapts like a liquid filling its container
+
+### Performance Impact (1-5)
+* 1: Significant frame drops or layout thrashing
+* 3: Occasional frame drops during complex animations
+* 5: Maintains 60fps across all animations and transitions
+
+### Natural Feel (1-5)
+* 1: Mechanical and artificial movement
+* 3: Somewhat natural but with noticeable programmatic patterns
+* 5: Indistinguishable from natural fluid movement
+
+### Cohesive System (1-5)
+* 1: Liquid elements feel disconnected from overall design
+* 3: Consistent liquid elements but not fully integrated
+* 5: Complete liquid design language that extends throughout the interface
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  * All animations maintain 60fps on mid-range devices
+  * Layouts reflow without content jumps when resized
+  * Liquid transitions complete within 300ms
+
+* **User Testing Requirements**:
+  * Measure emotional response to fluid animations
+  * Test perceived performance versus actual performance
+  * Validate that liquid elements enhance rather than distract from content
+
+* **Iteration Triggers**:
+  * Performance drops below 45fps on target devices
+  * User feedback indicating motion sickness or discomfort
+  * Accessibility audits revealing motion-related issues
+
+* **Documentation Standards**:
+  * Document physics parameters for all liquid animations
+  * Provide implementation examples across different viewport sizes
+  * Include performance optimization guidelines specific to liquid elements
