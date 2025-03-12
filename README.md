@@ -2,6 +2,9 @@
 
 A collection of guidelines, rules, and strategies for optimizing AI interactions.
 
+### How to Use PromptRules
+[CURSOR]I have found through use cases and hours and hours on cursor, that i've had success using tags in chat (@promptrule.mdc) to enforce usage. "Create [component] utilizing [promptrule] with extra focus on 1)... 2).... 3)....
+
 ## Overview
 
 PromptRules provides structured approaches to improve AI outputs through:
