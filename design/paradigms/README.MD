@@ -54,6 +54,12 @@ Single-color palettes with varying shades and tints for depth and hierarchy.
 - **Technical implementation**: Programmatic color generation, HSL manipulation
 - **Best for**: Focused interfaces, accessibility-first design, brand reinforcement
 
+### Daylight (Kindle-like)
+High-contrast, paper-like interfaces optimized for readability and reduced eye strain.
+- **Key characteristics**: Paper-white backgrounds, high contrast text, minimal colors, reduced blue light
+- **Technical implementation**: E-ink inspired color palettes, text-optimized typography, reduced animations
+- **Best for**: Reading interfaces, document viewers, accessibility-focused applications
+
 ### Retro-futurism
 Combines vintage aesthetics (80s, 90s) with futuristic elements.
 - **Key characteristics**: Vintage color palettes, grid systems, futuristic elements
