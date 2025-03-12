@@ -1,0 +1,96 @@
+# [SOFT, PUFFY, TANGIBLE]
+
+# Claymorphic Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create soft, puffy UI elements resembling clay with rounded corners and subtle shadows that convey a tactile, approachable interface
+* **Constraint Parameters**: Maintain performance with minimal DOM elements; shadows and filters should not impact render performance
+* **Reference Context**: Inspired by physical clay models; elements should appear malleable and three-dimensional
+* **Edge Case Handling**: Maintain legibility and usability when scaling to smaller viewports
+* **Evaluation Metrics**: User perception of approachability, comfort, and tactility
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  - Colors: Soft, slightly desaturated palette with light tints
+  - Typography: Rounded sans-serif fonts with medium weight
+  - Voice/tone: Friendly, approachable, playful yet professional
+* **Technical Requirements**: 
+  - Maximum 2 box-shadows per element
+  - Border-radius minimum 12px or 25% of smaller dimension
+  - Responsive breakpoints maintain "puffy" appearance at all sizes
+* **Accessibility Standards**: 
+  - WCAG AA compliance required
+  - Contrast ratio minimum 4.5:1 for text
+  - Interactive states must be clearly distinguishable
+* **Implementation Boundaries**: 
+  - CSS-only implementation preferred
+  - No dependencies on specific JavaScript frameworks
+  - Performant on mobile devices
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  - If element is interactive → increase "push" effect on hover/active states
+  - If element contains critical information → reduce shadow intensity for readability
+  - If element is secondary → increase puffiness and softness
+* **Priority Hierarchies**:
+  1. Usability and legibility
+  2. Tactile, clay-like appearance
+  3. Performance optimization
+  4. Animation subtlety
+* **Progressive Enhancement**:
+  - Base: Simple rounded corners and solid colors
+  - Enhanced: Gradient fills and single shadow
+  - Full: Multiple shadows, subtle internal highlights, hover animations
+* **Fallback Strategy**:
+  - When shadows not supported: use subtle borders
+  - When animations not preferred: static elevated appearance
+  - When high contrast needed: maintain clay shape with stronger color differentiation
+
+## 4. Comprehensive Rubric
+
+### Tangibility (1-5)
+* 1: Flat appearance with minimal depth cues
+* 3: Visible depth but lacks true clay-like quality
+* 5: Convincing illusion of soft, moldable material
+
+### Accessibility (1-5)
+* 1: Major accessibility barriers due to low contrast or visual complexity
+* 3: Meets minimum requirements but sacrifices some clay-like qualities
+* 5: Fully accessible while maintaining distinctive claymorphic appearance
+
+### Implementation Efficiency (1-5)
+* 1: Requires extensive CSS/JS with performance impacts
+* 3: Reasonable implementation with some optimization needed
+* 5: Lightweight implementation with minimal performance impact
+
+### Scalability (1-5)
+* 1: Clay effects break at certain screen sizes
+* 3: Maintains basic appearance across devices with some compromises
+* 5: Seamlessly adapts claymorphic qualities across all viewport sizes
+
+### Visual Coherence (1-5)
+* 1: Clay elements conflict with overall design system
+* 3: Clay elements present but inconsistently applied
+* 5: Harmonious application creating a cohesive tactile interface
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  - Elements appear to rise 4-8px from the surface
+  - Interactive elements compress visually when activated
+  - Shadows soften rather than sharpen edges
+* **User Testing Requirements**:
+  - Test perceived approachability against flat design alternatives
+  - Evaluate emotional response to interface
+  - Measure perceived ease-of-use
+* **Iteration Triggers**:
+  - Performance drops below 60fps on target devices
+  - Accessibility testing reveals contrast issues
+  - User testing indicates confusion about interactive elements
+* **Documentation Standards**:
+  - CSS variable system for all clay properties
+  - Mixins/helper classes for consistent implementation
+  - Examples of correct/incorrect applications
