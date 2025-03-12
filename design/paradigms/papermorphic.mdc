@@ -1,0 +1,95 @@
+# [TACTILE DEPTH WITH SUBTLE DIMENSION]
+
+# Papermorphic Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create interfaces that emulate the tactile nature of paper with subtle shadows and depth, while maintaining digital efficiency and clarity.
+* **Constraint Parameters**: Minimal use of gradients, limited shadow complexity, performance-optimized animations, lightweight implementation.
+* **Reference Context**: Google Material Design principles with reduced emphasis on motion and increased focus on subtle physicality.
+* **Edge Case Handling**: Fallback to flat designs on low-power devices, accessibility modes that reduce shadow effects.
+* **Evaluation Metrics**: Visual distinction between interactive elements, load performance impact, recognition rate in user testing.
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  * Colors: Primary palette with 50-900 range variations
+  * Typography: Clear hierarchical type system with 3-5 distinct sizes
+  * Elevation: 0-5 elevation scale with corresponding shadow values
+* **Technical Requirements**: 
+  * Shadow rendering under 5ms
+  * No parallax effects that degrade performance
+  * Support for rtl languages and text inflation
+* **Accessibility Standards**: 
+  * WCAG AA compliance minimum
+  * 4.5:1 contrast ratio for all text
+  * Focus states must be visible without relying solely on shadow effects
+* **Implementation Boundaries**: 
+  * CSS-only shadow implementations when possible
+  * Framework-agnostic component specifications
+  * No reliance on JavaScript for core visual rendering
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  * If element is interactive → Apply elevation level 1+
+  * If element contains other interactive elements → Apply elevation level 0
+  * If element is disabled → Remove elevation, apply opacity change
+* **Priority Hierarchies**:
+  * Performance > Visual fidelity
+  * Accessibility > Design consistency
+  * Usability > Motion effects
+* **Progressive Enhancement**:
+  * Base layer: Flat color differentiation for all elements
+  * Enhancement: Subtle shadows and hover states
+  * Advanced: Micro-interactions and paper-like transitions
+* **Fallback Strategy**:
+  * Replace shadows with borders when necessary
+  * Use color differentiation as alternative to elevation
+  * Provide high-contrast mode that eliminates subtle differences
+
+## 4. Comprehensive Rubric
+
+### Functionality (1-5)
+* 1: Shadows/elevations interfere with usability
+* 3: Design communicates hierarchy but some interactions lack clarity
+* 5: Perfect balance of visual depth cues and functional clarity
+
+### Accessibility (1-5)
+* 1: Relies on shadow/depth for critical information
+* 3: Accessible but with reduced elegance in high-contrast modes
+* 5: Maintains design integrity across all accessibility settings
+
+### Implementation Efficiency (1-5)
+* 1: Requires complex JS or CSS to achieve paper effects
+* 3: Reasonable implementation complexity with some performance impact
+* 5: Achieves paper effect with minimal technical overhead
+
+### Scalability (1-5)
+* 1: Design elements break at certain screen sizes
+* 3: Adapts to different viewports but with some inconsistencies
+* 5: Seamlessly scales from watch to wall display
+
+### Visual Coherence (1-5)
+* 1: Paper metaphor applies inconsistently across components
+* 3: Consistent metaphor with occasional awkward implementations
+* 5: Paper-like quality feels natural and intentional throughout
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  * Shadow blur radius never exceeds 12px
+  * Interactive elements have distinct rest, hover, active, and focus states
+  * All text components maintain legibility with or without shadows
+* **User Testing Requirements**:
+  * Validate depth perception across age demographics
+  * Test recognition of interactive elements without hover capability
+  * Measure performance impact on target devices
+* **Iteration Triggers**:
+  * User error rate > 2% when identifying interactive elements
+  * Performance degradation > 15% compared to flat design
+  * Accessibility complaints regarding contrast or readability
+* **Documentation Standards**:
+  * Shadow values specified in CSS variables
+  * Animation curves defined in functional terms
+  * Sample implementations in vanilla HTML/CSS and common frameworks
