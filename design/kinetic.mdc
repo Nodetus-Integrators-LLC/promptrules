@@ -1,0 +1,90 @@
+# [TEXT THAT MOVES, TELLS STORIES]
+
+# Kinetic Typography - Motion-focused Text-based Interfaces
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create dynamic, motion-based typography that communicates through movement while maintaining readability and purpose
+* **Constraint Parameters**: Animation timing (<800ms for transitions), performance impact (max 5% CPU overhead), text legibility throughout motion
+* **Reference Context**: See `examples/kinetic/showcase.mp4` for reference animations and motion patterns
+* **Edge Case Handling**: Define reduced-motion alternatives for accessibility preferences
+* **Evaluation Metrics**: Readability during animation, emotional impact, attention direction effectiveness
+
+## 2. Design Constants
+
+* **Brand Compliance**: Animations must respect brand pacing guidelines (energetic, smooth, deliberate)
+* **Technical Requirements**: 60fps minimum performance, JavaScript-optional implementations preferred, lazy-load for heavy animations
+* **Accessibility Standards**: WCAG 2.1 AA compliant, respect prefers-reduced-motion settings, no animations that flash more than 3 times per second
+* **Implementation Boundaries**: CSS animations preferred over JavaScript where possible, fallback to static displays when motion not supported
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  * If text conveys critical information → limit motion to 30% of characters
+  * If viewport < 768px → reduce animation complexity by 40%
+  * If animation duration > 1000ms → provide skip option
+
+* **Priority Hierarchies**:
+  1. Legibility/readability
+  2. Emotional resonance
+  3. Visual interest
+  4. Technical performance
+
+* **Progressive Enhancement**:
+  * Core: Static readable text with basic transitions
+  * Enhanced: Complex inter-character animations and timing functions
+  * Advanced: Environmental interactions (scroll, cursor, device orientation)
+
+* **Fallback Strategy**:
+  * When motion fails → static emphasis with color/weight
+  * When WebGL unavailable → CSS-only animations
+  * When all animation blocked → static hierarchical typography
+
+## 4. Comprehensive Rubric
+
+### Functionality (1-5)
+* 1: Motion distracts from or impedes text comprehension
+* 3: Motion neither enhances nor detracts from message
+* 5: Motion significantly enhances message comprehension and emotional impact
+
+### Accessibility (1-5)
+* 1: Causes discomfort or excludes users with motion sensitivity
+* 3: Provides basic alternatives for reduced motion preferences
+* 5: Thoughtfully designed alternatives that maintain impact for all users
+
+### Implementation Efficiency (1-5)
+* 1: Causes significant performance issues or requires heavy libraries
+* 3: Reasonable performance with moderate code complexity
+* 5: Excellent performance with minimal code footprint
+
+### Scalability (1-5)
+* 1: Works only for specific pre-defined text strings
+* 3: Adaptable to variable content with some limitations
+* 5: Fully adaptable to dynamic content of any length or structure
+
+### Visual Coherence (1-5)
+* 1: Motion feels random or disconnected from content meaning
+* 3: Motion aligns with basic content structure and hierarchy
+* 5: Motion perfectly expresses and enhances semantic meaning of text
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  * Text remains readable throughout entire animation sequence
+  * No motion-induced lag on target devices (test on iPhone 11, 2020 MacBook Air)
+  * Animation completes within 2 seconds for standard paragraphs
+
+* **User Testing Requirements**:
+  * Test with users having vestibular disorders
+  * Measure comprehension rates compared to static text
+  * Track eye movement to verify attention direction effectiveness
+
+* **Iteration Triggers**:
+  * >10% of users enable reduced motion after exposure
+  * <90% content comprehension compared to static equivalent
+  * Performance drops below 55fps on target devices
+
+* **Documentation Standards**:
+  * Provide CSS-only implementation examples
+  * Document timing functions and duration standards
+  * Include reduced-motion alternatives for each pattern
