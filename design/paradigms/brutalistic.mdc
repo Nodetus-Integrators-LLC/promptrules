@@ -1,0 +1,97 @@
+# [EXPOSE THE MACHINERY, EMBRACE IMPERFECTION]
+
+# Brutalistic Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create interfaces that expose underlying structure, emphasize functionality over aesthetics, and evoke raw, unfiltered emotion through design.
+* **Constraint Parameters**: Minimal decoration, limited color palette, emphasis on typography as structural element, visible grid systems.
+* **Reference Context**: Inspired by Brutalist architecture (1950s-1970s), contemporary digital brutalism (Craigslist, Hacker News, Bloomberg Businessweek).
+* **Edge Case Handling**: When accessibility conflicts with brutalist aesthetics, maintain harsh contrast but ensure readability and navigation remain functional.
+* **Evaluation Metrics**: Effectiveness measured by emotional impact, memorability, and clear functional hierarchy despite visual rawness.
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  - Colors: High contrast black/white foundation with 1-2 harsh accent colors (preferably primary colors)
+  - Typography: Monospaced fonts for data/code, aggressively scaled sans-serifs (Helvetica Neue Bold, Arial Black) for headlines
+  - Voice/Tone: Direct, unfiltered, technical, avoiding marketing language
+* **Technical Requirements**: 
+  - Performance priority over visual refinement
+  - Responsive breakpoints should cause dramatic layout shifts rather than smooth transitions
+  - Supported platforms must display intentional variation rather than consistency
+* **Accessibility Standards**: 
+  - WCAG AA compliance required despite harsh aesthetics
+  - Maintain minimum 4.5:1 contrast ratio for text
+  - Keyboard navigation must be visibly emphasized
+* **Implementation Boundaries**: 
+  - CSS should be written directly, minimizing preprocessor usage
+  - Avoid shadow DOM encapsulation to expose component structure
+  - Visible grid systems with deliberate "breaking points"
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  - IF element is interactive THEN make interaction mechanics visible
+  - IF content is hierarchical THEN use dramatic scale differences (min 1:3 ratio)
+  - IF information is system-generated THEN visually distinguish from user content
+* **Priority Hierarchies**:
+  1. Functional clarity
+  2. Structural honesty
+  3. Emotional impact
+  4. Technical efficiency
+  5. Conventional aesthetics (lowest priority)
+* **Progressive Enhancement**:
+  - Core: Text-based interface with harsh typographic hierarchy
+  - Enhancement: Strategic use of unrefined imagery, exposed technical elements
+  - Luxury: Dramatic animation that reveals structure/function
+* **Fallback Strategy**:
+  - When rich interactions unavailable, default to stark typographic treatments
+  - When brand guidelines conflict, create "raw" versions of brand elements
+  - When user testing reveals confusion, add instructional text rather than visual refinement
+
+## 4. Comprehensive Rubric
+
+### Functional Honesty (1-5)
+* 1: Hides underlying structure and function
+* 3: Partially exposes structure but maintains some artificial refinement
+* 5: Completely exposes the underlying machinery of the interface
+
+### Raw Aesthetic Impact (1-5)
+* 1: Polished, conventionally pleasing appearance
+* 3: Mixed elements of refinement and rawness
+* 5: Uncompromisingly raw, provoking strong reaction
+
+### Typographic Aggression (1-5)
+* 1: Conservative, conventional typography
+* 3: Bold typography with some restraint
+* 5: Extreme scale contrasts, harsh weighting, deliberate tension
+
+### Structural Visibility (1-5)
+* 1: Structure hidden beneath decorative elements
+* 3: Structure partially revealed
+* 5: Grid, hierarchy and construction fully exposed
+
+### Technical Directness (1-5)
+* 1: Many abstraction layers between code and display
+* 3: Some direct relationship between technical implementation and visual output
+* 5: Direct visual expression of the underlying technical implementation
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  - Users should be able to describe the function of each element without prior explanation
+  - Design should provoke descriptive adjectives in first 5 seconds of viewing
+  - Interface should be memorable and distinctly identifiable from competitors
+* **User Testing Requirements**:
+  - Test with users who express preference for both minimal and maximalist aesthetics
+  - Measure time-to-task completion despite harsh design
+  - Record emotional reactions and descriptive language unprompted
+* **Iteration Triggers**:
+  - Redesign needed if users describe interface as "pretty" or "elegant"
+  - Intervention required if task completion falls below 85% success rate
+  - Refinement needed if users cannot articulate purpose of major elements
+* **Documentation Standards**:
+  - Include both functional descriptions and intended emotional impact
+  - Document deliberate "broken" elements and their purpose
+  - Provide rationale for each violation of conventional design patterns
