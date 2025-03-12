@@ -1,0 +1,96 @@
+# [MORE IS MORE: EMBRACE ABUNDANCE]
+
+# MDC Structure: Maximalism Design Paradigm
+
+## 1. Prompt Architecture
+
+* **Intent Declaration**: Create rich, complex visuals with abundant details and patterns that create visual impact through density and layering
+* **Constraint Parameters**: Must maintain functionality despite visual complexity; ensure text remains readable
+* **Reference Context**: Baroque, Memphis Design, Pattern & Decoration movement, Versace aesthetics
+* **Edge Case Handling**: Define how to handle limited screen space and mobile adaptations
+* **Evaluation Metrics**: Visual impact, cohesive chaos, discoverability of interactive elements
+
+## 2. Design Constants
+
+* **Brand Compliance**: 
+  * Use full brand color palette including secondary and tertiary colors
+  * Mix multiple typefaces across display and body text
+  * Voice/tone should be bold, expressive, and confident
+* **Technical Requirements**: 
+  * Ensure load times remain under 3s despite complex graphics
+  * Responsive breakpoints must accommodate dense layouts at all sizes
+  * Support for high-resolution displays to show intricate details
+* **Accessibility Standards**: 
+  * Maintain WCAG AA compliance despite visual complexity
+  * Ensure sufficient contrast for text elements (4.5:1 minimum)
+  * Provide clear focus indicators within busy backgrounds
+* **Implementation Boundaries**: 
+  * Use CSS for patterns and textures where possible before images
+  * Minimize JavaScript dependencies for decorative elements
+
+## 3. Decision Framework
+
+* **Binary Decision Trees**:
+  * If content is primary → maintain 30% negative space around it
+  * If content is secondary → can be integrated into pattern elements
+  * If screen width < 768px → reduce pattern complexity by 40%
+* **Priority Hierarchies**:
+  * 1. Content legibility
+  * 2. Brand expression
+  * 3. Visual density
+  * 4. Animation/movement
+  * 5. Pattern variety
+* **Progressive Enhancement**:
+  * Core: Bold typography and color contrast
+  * Enhanced: Layered patterns and animations
+  * Premium: Interactive pattern elements and parallax effects
+* **Fallback Strategy**:
+  * Replace complex SVG patterns with simpler versions for older browsers
+  * Use solid colors instead of gradients where not supported
+  * Simplify to key decorative elements only when performance issues arise
+
+## 4. Comprehensive Rubric
+
+### Functionality (1-5)
+* 1: Visual elements obstruct core functionality
+* 3: Functions with slight usability challenges due to visual elements
+* 5: Maintains perfect functionality while supporting rich visual complexity
+
+### Accessibility (1-5)
+* 1: Visual complexity creates significant barriers to access
+* 3: Core content is accessible despite surrounding decorative elements
+* 5: Maximalist design enhances content hierarchy and improves navigation
+
+### Implementation Efficiency (1-5)
+* 1: Requires completely custom implementation for each instance
+* 3: Uses repeatable patterns but with multiple custom elements
+* 5: Achieves complex visual effects through efficient, systematic code
+
+### Scalability (1-5)
+* 1: Design only works for specific content types
+* 3: Can be adapted across different content with significant modifications
+* 5: Pattern system scales across diverse applications while maintaining maximalist aesthetic
+
+### Visual Coherence (1-5)
+* 1: Elements clash in discordant ways that feel unintentional
+* 3: High visual density but with some competing focal points
+* 5: Creates "coherent chaos" where all elements form an intentional composition
+
+## 5. Validation Protocol
+
+* **Testable Assertions**:
+  * Users can locate primary CTAs within 3 seconds despite busy backgrounds
+  * Page load performance remains under 3 seconds on standard connections
+  * All text achieves minimum 4.5:1 contrast ratio against backgrounds
+* **User Testing Requirements**:
+  * Test with users on various devices including low-end mobile
+  * Evaluate cognitive load through task completion time compared to standard interfaces
+  * Validate emotional response aligns with brand personality goals
+* **Iteration Triggers**:
+  * Task completion rates drop below 85%
+  * Load times exceed 3 seconds
+  * User feedback indicates visual fatigue
+* **Documentation Standards**:
+  * Pattern library with composition guidelines
+  * Layer management best practices
+  * Performance optimization techniques for complex visuals
