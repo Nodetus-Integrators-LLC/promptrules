@@ -1,0 +1,66 @@
+Generate a comprehensive UI design using the [DESIGN PARADIGM] style for a basic website.
+
+Requirements:
+1. Visual characteristics: Define the exact visual elements that make this conform to [DESIGN PARADIGM] (shadows, depth, textures, colors, shapes)
+
+2. Required components:
+   - Header with logo, navigation menu (5 items), and CTA button
+   - Hero section with headline, subheading, illustration, and primary action button
+   - Form with 4 input fields, checkbox, radio buttons, and submit button
+   - Card component with image, title, description, and interaction elements
+   - Alert/notification component with success, warning, and error states
+   - Data table with at least 4 columns and pagination controls
+   - Modal/dialog component with close mechanism
+   - Accordion/expandable sections (3 items)
+   - Footer with site map, social links, and copyright information
+   - Loading indicator/state
+   - Toggle/switch component
+
+3. Interactive states for each component:
+   - Default state
+   - Hover state
+   - Active/pressed state
+   - Focus state
+   - Disabled state
+   - Error state (where applicable)
+
+4. Color palette:
+   - Primary color with 3 tints/shades
+   - Secondary color with 3 tints/shades
+   - Accent color
+   - Neutral colors (background, surface, border, text - dark and light variants)
+   - Semantic colors (success, warning, error, info)
+
+5. Typography system:
+   - Font family for headings and body text
+   - Scale for all text elements (h1-h6, paragraph, caption, button, link)
+   - Line-height, letter-spacing, and font-weight specifications
+
+6. Responsive behavior:
+   - Mobile layout (320px-767px)
+   - Tablet layout (768px-1023px)
+   - Desktop layout (1024px+)
+   - Component-specific breakpoint adjustments
+
+7. Animation specifications:
+   - Timing functions
+   - Duration values
+   - Transform properties
+   - Transition behaviors for state changes
+   - Micro-interactions unique to the design paradigm
+
+8. Accessibility requirements:
+   - Color contrast ratios
+   - Focus indicator styles
+   - Semantic HTML structure
+   - ARIA attributes where needed
+   - Keyboard navigation considerations
+
+Output format:
+- Design system overview with core principles of the [DESIGN PARADIGM] (150 words max)
+- Component specifications with detailed CSS properties and exact values
+- Complete HTML structure for all components
+- Full CSS implementation with variables for theming
+- JavaScript for required interactions and state management
+- Responsive behavior specifications with media query breakpoints
+- Implementation recommendations and potential limitations
